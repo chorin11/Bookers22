@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-f60234b773e4108bf3a23e1803575b1537cdb89e41b5d54103ab4442d9173afc.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-16c63e09722002e92fcaf5c0d6843a8bcfd73cbaab058fd419fe73078c49ee86.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+
+        <p class="navbar-brand navbar-reft">Bookers</p>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="glyphicon glyphicon-home home" href="/users/2">Home</a></li>
+              <li><a class="glyphicon glyphicon-user users" href="/users">Users</a></li>
+              <li><a class="glyphicon glyphicon-book books" href="/books">Books</a></li>
+              <li>
+
+                <a class="glyphicon glyphicon-log-out logout" href="/users/sign_out">logout</a></li>
+            </ul>
+              </ul>
+        </nav>
+
+        <div style="margin-top: 51px">
+        <div class="body">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-xs-3">
+          <h2>User info</h2>
+            <img class="attachment user profile_image fallback">
+              <table class="table">
+                <tbody>
+                  <tr><img class="attachment user profile_image fallback" src="/assets/no_image-d0b1347608ca95154664baaba4fafcebc7d2280461b778eef871ce9662c6b822.png" width="100" height="100" /></tr>
+                  <tr>
+                    <td>name</td>
+                    <td>aa1n08gye8</td>
+                  </tr>
+                  <tr>
+                    <td>introduction</td>
+                    <td>fo4vm9tvwa77xid03bcl</td>
+                  </tr>
+                </tbody>
+              </table>
+
+    <a class="col-xs-12 btn btn-default glyphicon glyphicon-wrench" href="/users/2/edit"></a>
+
+  <h2>New book</h2>
+    
+    <form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+      <h4>Title</h4>
+      <input type="text" name="book[title]" id="book_title" />
+
+      <h4>Opinion</h4>
+      <textarea name="book[body]" id="book_body">
+</textarea>
+
+      <div><input type="submit" name="commit" value="Create Book" class="btn btn-primary col-xs-12" data-disable-with="Create Book" /></div>
+    </form>
+</div>
+
+
+    <div class="col-xs-9">
+      <h2>Users</h2>
+        <table class="table table-hover table-inverse">
+         <thead>
+            <tr>
+             <th>image</th><th>name</th>
+            </tr>
+         </thead>
+
+          <tr>
+            <div>
+              <td><img class="attachment user profile_image fallback" src="/assets/no_image-d0b1347608ca95154664baaba4fafcebc7d2280461b778eef871ce9662c6b822.png" /></td>
+            </div>
+            <div>
+             <td>sqzqw0lh2g</td>
+            </div>
+            <span>
+              <td><a href="/users/1">Show</a></td>
+            </span>
+          </tr>
+          <tr>
+            <div>
+              <td><img class="attachment user profile_image fallback" src="/assets/no_image-d0b1347608ca95154664baaba4fafcebc7d2280461b778eef871ce9662c6b822.png" /></td>
+            </div>
+            <div>
+             <td>aa1n08gye8</td>
+            </div>
+            <span>
+              <td><a href="/users/2">Show</a></td>
+            </span>
+          </tr>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+
+        <footer>
+          <div class="col-xs-3 col-xs-offset-9">
+          <p>CopyRight Infratop.inc</p>
+        </div>
+        </footer>
+    </div>
+  </body>
+</html>

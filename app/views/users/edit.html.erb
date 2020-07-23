@@ -1,0 +1,34 @@
+<p id ="notice">
+  <%= notice %>
+</p>
+<h1>User info</h1>
+  <% if @user.errors.any? %>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message+"error" %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+  
+    <%= form_for(@user) do |f| %>
+      <div class="edit_user">
+        <div>Name</div>
+        <%= f.text_field :name, autofocus: true, id:"inputEmail", placeholder:"name" %>
+        <span class="fa fa-user form-control-icon" aria-hidden="true"></span>
+      </div>
+
+      <div class="image">
+        <div>Image</div>
+      <%= f.attachment_field :profile_image, placeholder: "Image", class: "user-edit-form" %>
+      </div>
+
+      <div class="user_introduction">
+        <div>Introduction</div>
+        <%= f.text_area :introduction, autofocus: true, id:"inputEmail", placeholder:"introduction" %>
+        <span class="fa fa-user form-control-icon" aria-hidden="true"></span>
+      </div>
+
+      <%= f.submit "Update User" %>
+
+    <% end %>
